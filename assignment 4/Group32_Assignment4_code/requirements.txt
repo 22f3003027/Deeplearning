@@ -1,0 +1,5 @@
+numpy>=2.0
+Pillow>=10.0
+torch>=2.2
+matplotlib>=3.8
+threadpoolctl>=3.0

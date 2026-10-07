@@ -1,0 +1,9 @@
+.venv/
+.uv-cache/
+__pycache__/
+.pytest_cache/
+tmp/
+Group32_Assignment4_code/results/
+Group32_Assignment3_code/results/
+output/latex/**/build/
+*.zip

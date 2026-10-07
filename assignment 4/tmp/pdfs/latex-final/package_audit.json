@@ -1,0 +1,12 @@
+{
+  "3": {
+    "package_integrity": "passed",
+    "python_sources": 8,
+    "latex_figures": 4
+  },
+  "4": {
+    "package_integrity": "passed",
+    "python_sources": 11,
+    "latex_figures": 14
+  }
+}

@@ -1,0 +1,71 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=22mm,headheight=15pt]{geometry}
+\usepackage{graphicx,amsmath,booktabs,array,longtable,tabularx}
+\usepackage{xcolor,fancyhdr,hyperref}
+\definecolor{ink}{HTML}{20334B}
+\definecolor{accent}{HTML}{245E91}
+\hypersetup{colorlinks=true,linkcolor=accent,urlcolor=accent,pdftitle={Layout check},pdfauthor={Group 32}}
+\graphicspath{{figures/}}
+\pagestyle{fancy}\fancyhf{}
+\fancyhead[L]{\small CS601T: Deep Learning}
+\fancyhead[R]{\small Assignment 4 / Group 32}
+\fancyfoot[L]{\small MNIST digits 0, 3, 5, 6, 9}
+\fancyfoot[R]{\thepage}
+\setlength{\parindent}{0pt}\setlength{\parskip}{7pt}
+\setlength{\emergencystretch}{2em}
+\renewcommand{\arraystretch}{1.18}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\begin{document}
+
+\begin{titlepage}\thispagestyle{empty}
+
+{\color{accent}\large CS601T: Deep Learning}\par\vspace{24mm}
+
+{\color{ink}\Huge\bfseries Layout check}\par\vspace{8mm}
+
+{\LARGE Programming Assignment 4}\par\vspace{4mm}
+
+{\Large Group 32}\par\vspace{5mm}
+
+{\large Autumn semester 2026}\par\vspace{10mm}
+
+Compiler and layout validation
+
+
+\begingroup\small\setlength{\tabcolsep}{5pt}
+
+\begin{tabularx}{\linewidth}{Yrlrrr}
+
+\toprule
+
+\textbf{Study} & \textbf{Dimension} & \textbf{Optimizer / FCNN} & \textbf{Validation} & \textbf{Test} & \textbf{Delta (pp)} \\
+
+\midrule
+
+Assignment 3 reproduction & 784 & Momentum & 98.00\% & 98.00\% & 0.00 \\
+
+DAE, 40\% & 256 & 128 $\to$ 64 & 98.10\% & 97.87\% & -0.13 \\
+
+\bottomrule\end{tabularx}\endgroup\par\medskip
+
+\vfill\end{titlepage}
+
+\clearpage
+
+\section{Epochs}
+
+\begingroup\scriptsize\setlength{\tabcolsep}{5pt}
+
+\begin{tabularx}{\linewidth}{Yrrrrrrr}
+
+\toprule
+
+\textbf{Architecture} & \textbf{SGD} & \textbf{Batch\_GD} & \textbf{Momentum} & \textbf{NAG} & \textbf{AdaGrad} & \textbf{RMSProp} & \textbf{Adam} \\
+
+\midrule
+
+3 layers & 34 & 3654 & 37 & 32 & 1000 & 120 & 20 \\
+
+\bottomrule\end{tabularx}\endgroup\par\medskip
+
+\end{document}

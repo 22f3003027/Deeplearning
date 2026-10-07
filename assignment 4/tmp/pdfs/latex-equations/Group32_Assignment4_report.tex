@@ -1,0 +1,26 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=22mm,headheight=15pt]{geometry}
+\usepackage{graphicx,amsmath,amsfonts,booktabs,array,longtable,tabularx}
+\usepackage{xcolor,fancyhdr,hyperref}
+\definecolor{ink}{HTML}{20334B}
+\definecolor{accent}{HTML}{245E91}
+\hypersetup{colorlinks=true,linkcolor=accent,urlcolor=accent,pdftitle={Equation check},pdfauthor={Group 32}}
+\graphicspath{{figures/}}
+\pagestyle{fancy}\fancyhf{}
+\fancyhead[L]{\small CS601T: Deep Learning}
+\fancyhead[R]{\small Assignment 4 / Group 32}
+\fancyfoot[L]{\small MNIST digits 0, 3, 5, 6, 9}
+\fancyfoot[R]{\thepage}
+\setlength{\parindent}{0pt}\setlength{\parskip}{7pt}
+\setlength{\emergencystretch}{2em}
+\renewcommand{\arraystretch}{1.18}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\begin{document}
+
+\clearpage
+
+\section{Denoising}
+
+\[\mathbb{E}_{x,m}\lVert f_\theta(m\odot x)-x\rVert_2^2\]
+
+\end{document}
